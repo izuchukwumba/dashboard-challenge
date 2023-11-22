@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.drafts {
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.6);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: max-content;
+  border-radius: 10px;
+  height: max-content;
+  transition: height 0.3s ease-in-out;
+}
+
+.container div:last-child {
+  border-color: transparent;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.container div:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.entry {
+  display: flex;
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: fit-content;
+  height: inherit;
+}
+
+.entry:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.smash-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+.sub-text {
+  font-family: "Inter", sans-serif;
+  opacity: 0.7;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.price {
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+.button {
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: black;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
