@@ -51,6 +51,7 @@ body {
   padding: 15px;
   width: fit-content;
   height: inherit;
+  cursor: pointer;
 }
 
 .entry:hover {
