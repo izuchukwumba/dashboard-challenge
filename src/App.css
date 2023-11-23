@@ -21,10 +21,17 @@ body {
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  width: max-content;
   border-radius: 10px;
-  height: max-content;
-  transition: height 0.3s ease-in-out;
+
+  max-width: max-content;
+  max-height: 100px;
+  overflow-y: hidden;
+
+  transition: max-height 1s ease-in-out;
+}
+
+.container.expanded {
+  max-height: 1500px;
 }
 
 .container div:last-child {

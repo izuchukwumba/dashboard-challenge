@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div class="drafts">Drafts</div>
-      <div class="container">
+      <div class={!isShown ? "container" : "container expanded"}>
         {isShown ? (
           data.map((item) => (
             <div class="entry">
